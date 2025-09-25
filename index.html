@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive Image Gallery — Task 1</title>
+   <link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>Responsive Image Gallery</h1>
+        <p class="lead">Click an image to open the lightbox. Use filters and categories to explore.</p>
+      </div>
+
+      <div class="controls">
+        <div class="filters" role="tablist" aria-label="categories">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="nature">Nature</button>
+          <button class="pill" data-filter="cities">Cities</button>
+          <button class="pill" data-filter="people">People</button>
+        </div>
+
+        
+      </div>
+    </header>
+
+    <!-- Gallery: replace src values with your images (e.g. images/photo1.jpg). Use data attributes for categories and captions. -->
+    <main>
+      <section id="gallery" class="gallery filter-none" aria-live="polite">
+
+        <figure class="card" tabindex="0" data-src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&auto=format&fit=crop&q=80" data-category="nature" data-caption="Misty forest — Morning sunlight filtering through tall pine trees">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=480&auto=format&fit=crop&q=70" srcset="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=360&auto=format&fit=crop&q=60 360w, https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=480&auto=format&fit=crop&q=70 480w, https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=720&auto=format&fit=crop&q=75 720w" sizes="(max-width: 600px) 50vw, (max-width: 1200px) 33vw, 300px" alt="Misty forest with morning sunlight" loading="lazy">
+          <figcaption class="meta">Nature</figcaption>
+        </figure>
+
+        <figure class="card" tabindex="0" data-src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1600&auto=format&fit=crop&q=80" data-category="cities" data-caption="Modern city skyline — Blue hour with neon lights">
+          <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=480&auto=format&fit=crop&q=70" srcset="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=360&auto=format&fit=crop&q=60 360w, https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=480&auto=format&fit=crop&q=70 480w, https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=720&auto=format&fit=crop&q=75 720w" sizes="(max-width: 600px) 50vw, (max-width: 1200px) 33vw, 300px" alt="Modern city skyline at blue hour" loading="lazy">
+          <figcaption class="meta">Cities</figcaption>
+        </figure>
+
+        <figure class="card" tabindex="0" data-src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=1600&auto=format&fit=crop&q=80" data-category="people" data-caption="Portrait — Natural smile with warm lighting">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=480&auto=format&fit=crop&q=70" srcset="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=360&auto=format&fit=crop&q=60 360w, https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=480&auto=format&fit=crop&q=70 480w, https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=720&auto=format&fit=crop&q=75 720w" sizes="(max-width: 600px) 50vw, (max-width: 1200px) 33vw, 300px" alt="Portrait with natural smile" loading="lazy">
+          <figcaption class="meta">People</figcaption>
+        </figure>
+
+        <figure class="card" tabindex="0" data-src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&auto=format&fit=crop&q=80" data-category="nature" data-caption="Golden sand dunes — Sunset with dramatic shadows">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=480&auto=format&fit=crop&q=70" srcset="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=360&auto=format&fit=crop&q=60 360w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=480&auto=format&fit=crop&q=70 480w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=720&auto=format&fit=crop&q=75 720w" sizes="(max-width: 600px) 50vw, (max-width: 1200px) 33vw, 300px" alt="Golden sand dunes at sunset" loading="lazy">
+          <figcaption class="meta">Nature</figcaption>
+        </figure>
+
+        <figure class="card" tabindex="0" data-src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=1600&auto=format&fit=crop&q=80" data-category="cities" data-caption="Vibrant street market — Night scene with colorful lights">
+          <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=480&auto=format&fit=crop&q=70" srcset="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=360&auto=format&fit=crop&q=60 360w, https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=480&auto=format&fit=crop&q=70 480w, https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=720&auto=format&fit=crop&q=75 720w" sizes="(max-width: 600px) 50vw, (max-width: 1200px) 33vw, 300px" alt="Vibrant street market at night" loading="lazy">
+          <figcaption class="meta">Cities</figcaption>
+        </figure>
+
+        <figure class="card" tabindex="0" data-src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1600&auto=format&fit=crop&q=80" data-category="people" data-caption="Street performer — Candid moment of artistic expression">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=480&auto=format&fit=crop&q=70" srcset="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=360&auto=format&fit=crop&q=60 360w, https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=480&auto=format&fit=crop&q=70 480w, https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=720&auto=format&fit=crop&q=75 720w" sizes="(max-width: 600px) 50vw, (max-width: 1200px) 33vw, 300px" alt="Street performer candid moment" loading="lazy">
+          <figcaption class="meta">People</figcaption>
+        </figure>
+
+      </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="lb-inner" role="document">
+
+        <button class="nav-btn prev" id="prevBtn" aria-label="Previous image">
+          <!-- SVG: chevron left -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="lb-media">
+          <img id="lbImage" src="images/blog-img-1.jpeg" alt="">
+        </div>
+
+        <div class="lb-meta">
+          <div>
+            <div class="caption" id="lbCaption">Image caption</div>
+            <small class="counter" id="lbCounter">1 / 6</small>
+            <small id="lbDetails">Details here</small>
+          </div>
+          <div style="margin-top:auto;display:flex;gap:8px;align-items:center;justify-content:flex-end">
+            <button id="downloadBtn" class="btn" title="Download image">
+              <!-- SVG: download -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download
+            </button>
+
+            <button id="closeBtn" class="btn close-btn" title="Close">
+              <!-- SVG: x -->
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Close
+            </button>
+          </div>
+        </div>
+
+        <button class="nav-btn next" id="nextBtn" aria-label="Next image">
+          <!-- SVG: chevron right -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+    <script src="js/index.js"></script>
+
+ 
+</body>
+</html>
